@@ -5,8 +5,8 @@ import { NavLink } from "react-router-dom";
 
 export const Navbar = () => {
   return (
-    <div className="flex justify-between w-full top-0 animate-fade-down animate-once animate-duration-[1500ms] animate-delay-100 animate-ease-in-out animate-normal animate-fill-forwards">
-      <div className="m-8 flex space-x-5 items-center">
+    <div className="flex max-sm:flex-wrap justify-between w-full top-0 animate-fade-down animate-once animate-duration-[1500ms] animate-delay-100 animate-ease-in-out animate-normal animate-fill-forwards">
+      <div className="m-8 flex space-x-5 items-center max-sm:w-full">
         <div>
           <img src={logo} alt="" width={100} />
         </div>
@@ -16,7 +16,7 @@ export const Navbar = () => {
           2024
         </div>
       </div>
-      <div className="flex justify-between w-[35%] items-center mr-16 text-lg">
+      <div className="flex justify-between w-[35%] items-center mr-16 text-lg max-sm:w-full max-sm:justify-around max-sm:mr-5">
         {/* se mapea el objeto NavMenu donde se itera cada una de sus propiedades y mostrarlas en el menu */}
         {NavMenu.map(({ title, url }) => (
           <div className="flex font-RedHatDisplay font-light" key={title}>

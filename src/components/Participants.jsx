@@ -8,9 +8,9 @@ export const Participants = () => {
     <div className="flex w-full flex-wrap text-slate-300 top-0 p-5 font-RedHatDisplay min-h-screen">
       <div className="w-full">
         <h1 className="mt-5 text-5xl text-center">Participantes Destacados</h1>
-        <div className="flex justify-between mt-5 p-10">
+        <div className="flex justify-between mt-5 p-10 max-sm:flex-wrap">
           {CardsParticipants.map(({ name, description, photo }) => (
-            <div className="flex flex-col items-center w-[25%]" key={name}>
+            <div className="flex flex-col items-center w-[25%] max-sm:w-full max-md:mt-10" key={name}>
               <div className="flex justify-center bg-slate-700 w-full h-80 rounded-md rounded-b-none overflow-hidden animate-fade animate-duration-[1500ms] animate-ease-in-out animate-fill-forwards">
                 <LazyLoad threshold={0.1}>
                   <img
